@@ -1,0 +1,6 @@
+<% include('layout'); %>
+<h1>About Us</h1>
+<form method="POST" action="/about">
+    <textarea name="text"><%= aboutText %></textarea>
+    <button type="submit">Update</button>
+</form>

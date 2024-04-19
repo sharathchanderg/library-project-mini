@@ -1,0 +1,19 @@
+{
+  "name": "library-portal",
+  "version": "1.0.0",
+  "description": "library portal for admin usage",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "niharika",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.6"
+  }
+}
+
+

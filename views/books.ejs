@@ -1,0 +1,17 @@
+<% include('layout'); %>
+<h1>Books</h1>
+<% if (categories) { %>
+    <ul>
+        <% categories.forEach(category => { %>
+            <li><a href="/books/<%= category %>"><%= category %></a></li>
+        <% }) %>
+    </ul>
+<% } else if (books) { %>
+    <h2><%= category %></h2>
+    <a href="/books/add?category=<%= category %>">Add Book</a>
+    <ul>
+        <% books.forEach(book => { %>
+            <li><%= book.name %> by <%= book.author %></li>
+        <% }) %>
+    </ul>
+<% } %>
